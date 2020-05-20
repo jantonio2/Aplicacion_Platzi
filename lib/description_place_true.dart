@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'button_purple.dart';
 
 enum StarState {
 filled, half, empty
@@ -59,9 +60,11 @@ class DescriptionPlace extends StatelessWidget {
 
     final mainContainer = Container(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               titleStarts,
-              descriptionText
+              descriptionText,
+              ButtonPurple("Navigate")
             ]
         )
     );
