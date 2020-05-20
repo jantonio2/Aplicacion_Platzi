@@ -27,18 +27,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hola Mundo Feliz"),
-        ),
         body: Stack(
           children: <Widget>[
             ListView(
               children: <Widget>[
-                DescriptionPlace("Bahamas", 4, descriptionDummy),
+                DescriptionPlace("Bahamas", 3.5, descriptionDummy),
                 ReviewList()
               ],
             ),
-            GradientBack()
+            GradientBack("Popular")
           ],
         ),
         //body: ReviewList(),
