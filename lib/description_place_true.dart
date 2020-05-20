@@ -24,6 +24,7 @@ class DescriptionPlace extends StatelessWidget {
               child: Text(
                   this.namePlace,
                   style: TextStyle(
+                      fontFamily: "Lato",
                       fontSize: 30.0,
                       fontWeight: FontWeight.w900
                   ),
@@ -47,8 +48,9 @@ class DescriptionPlace extends StatelessWidget {
           child: Text(
               this.descriptionPlace,
               style: TextStyle(
+                  fontFamily: "Lato",
                   fontSize: 16.0,
-                  color: Color.fromRGBO(51, 51, 51, .7)
+                  color: Color(0xFF56575a)
               ),
               textAlign: TextAlign.left
           ),
@@ -121,6 +123,12 @@ class DescriptionPlace extends StatelessWidget {
     color: Colors.grey,
     );
     break;
+      case StarState.half:
+        // TODO: Handle this case.
+        break;
+      case StarState.empty:
+        // TODO: Handle this case.
+        break;
     }
 
     final star = Container(
